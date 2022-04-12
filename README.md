@@ -1,169 +1,58 @@
 # Design and Analysis of Algorithms
 
+- [PCS - 409](#pcs---409)
+
+[//]: # (- [TCS - 409])
+
 ### PCS - 409
 
 1. [March, 2](#march-2)
 2. [March, 9](#march-9)
 3. [March, 23](#march-23)
+4. [March, 30](#march-30)
+5. [April, 06](#april-06)
+
+---
 
 #### March, 2
 
-1. Given an array of non-negative integers, design a linear algorithm and implement it using a program to find whether given key element is present in the array or not. Also, find total number of comparisons for each input case. (Time Complexity = O(n), where n is the size of input).
-
-    **Sample I/O** (Problem - 1):</br>
-    | **Input:** | **Output:** |
-    | :---       | :---        |
-    | 3</br>8</br>34 35 65 31 25 89 64 30</br>89</br>5</br>977 354 244 546 355</br>244</br>6</br>23 64 13 67 43 56</br>63 | Present 6</br>Present 3</br>Not Present 6 |
-
-2. Given an already sorted array of positve integers, design an algorithm and implement it using a program to find whether given key element is present in the array or not. Also, find the total number of comparisons for each input case. (Time Complexity = O(nlog(n)), where n is the size of input).
-
-3. Given an already sorted array of positive integers, design an algorithm and implement it using a program to find whether a given key element is present in the sorted array or not. For an array arr[n], search at the indexes arr[0], arr[2], arr[4],... ..., arr[2<sup>k</sup>] and so on. Once the interval (arr[2<sup>k</sup>] < key < arr[2<sup>k+1</sup>]) is found, perform a linear search operation from the index 2<sup>k</sup> to find the element key. (Time Complexity < O(n), where n is the number of elements need to be scanned for searching).
-
-    **Input Format:**
-
-    The first line contains number of test cases, T.</br>
-    For each test case, there will be three input lines.</br>
-    First line contains n (the size of array).</br>
-    Second line contains n space-separated integers describing array.</br>
-    Third line contains the key element that need to be searched in the array.
-
-    **Output Format:**</br>
-    The output will have T number of lines.</br>
-    For each test case, output will be "**Present**" if the key element is found in the array, otherwise "**Not Present**".</br>
-    Also, for each test case, output the number of comparisons required to search the key.</br>
-
-    **Sample I/O** (Problem - 2, 3):</br>
-    | **Input:** | **Output:** |
-    | :---       | :---        |
-    | 3</br>5</br>12 23 36 39 41</br>41</br>8</br>21 39 40 45 51 54 68 72</br>69</br>10</br>101 246 438 561 796 896 899 4644 7999 8545</br>7999 | Present 3</br>Not Present 4</br>Present 3 |
+1. [Linear Search](/PCS-409/Week_1/README#linear-search)
+2. [Binary Search](/PCS-409/Week_1/README#binary-search)
+3. [Jump Search](/PCS-409/Week_1/README#jump-search)
 
 ---
 
 #### March, 9
 
-1. Given a sorted array of positive integers containing few duplicate elements, design an algorithm and implement it using a program to find whether the given key element is present in the array or not. If present, then also find the number of copies of given key. (Time Complexity = O(log n))</br>
+1. [Duplicate](/PCS-409/Week_2/README#duplicate)
+2. [Sum](/PCS-409/Week_2/README#sum)
+3. [Difference](/PCS-409/Week_2/README#difference)
 
-    **Input Format:**</br>
-    The first line contains number of test cases, T.</br>
-    For each test case, there will be three input lines.</br>
-    First line contains n (the size of array).</br>
-    Second line contains space-separated integers describing array.</br>
-    Third line contains the key element that needs to be searched in the array.</br>
-
-    **Output Format:**</br>
-    The output will have T number of lines.</br>
-    For each test case T, output will be the key element  and its number of copies in the array if the key element is present otherwise print "**Key not present**".</br>
-
-    **Sample I/O** (Problem - 1):</br>
-    | **Input:** | **Output:** |
-    | :---       | :---        |
-    |2</br>10</br>235 235 278 278 763 764 790 853 981 981</br>981</br>15</br>1 2 2 3 3 5 5 5 25 75 75 75 97 97 97</br>75|981 2</br>75 3|
-
-2. Given a sorted array of positive integers, design an algorithm and implement it using a program to find three indices i, j, k such that arr[i] + arr[j] = arr[k].</br>
-
-    **Input Format:**</br>
-    The first line contains number of test cases, T.</br>
-    For each test case, there will be two input lines.</br>
-    First line contains n (the size of array).</br>
-    Second line contains space-separated integers describing array.</br>
-
-    **Output Format:**</br>
-    The output will have T number of lines.</br>
-    For each test case T, print the values of i, j and k, if found else print "**No sequence found**".</br>
-
-    **Sample I/O** (Problem - 2):</br>
-    | **Input:** | **Output:** |
-    | :---       | :---        |
-    |3</br>5</br>1 5 84 209 341</br>10</br>24 28 48 71 86 89 92 120 194 201</br>15</br>64 69 82 95 99 107 113 141 171 350 369 400 511 590 666| No sequence found.</br>2, 7, 8</br>1, 6, 9|
-
-3. Given an array of non-negative integers, design an algorithm and a program to count the number of pairs of integers such that their difference is equal to a given key, K.</br>
-
-    **Input Format:**</br>
-    The first line contains number of test cases, T.</br>
-    For each test case, there will be three input lines.</br>
-    First line contains n (the size of array).</br>
-    Second line contains space-separated integers describing array.</br>
-    Third line contains the key element.</br>
-
-    **Output Format:**</br>
-    The output will have T number of lines.</br>
-    For each test case T, output will be the total count, i.e., number of times such pair exists.</br>
-
-    **Sample I/O** (Problem - 3):</br>
-    | **Input:** | **Output:** |
-    | :---       | :---        |
-    |2</br>5</br>1 51 84 21 31</br>20</br>10</br>24 71 16 92 12 28 48 14 20 22</br>4 | 2</br>4 |
-
-    ---
-
+---
 
 #### March, 23
 
-1. Given an unsorted array of integers, design an algorithm and a program to sort the array using insertion sort. Your program should be able to find number of comparisons and shifts (shifts - total number of times the array elements are shifted from their place), required for sorting the array.</br>
-
-    **Input Format:**</br>
-    The first line contains number of test cases, T.</br>
-    For each test case, there will be two input lines.</br>
-    First line contains n (the size of array).</br>
-    Second line contains space-separated integers describing array.</br>
-
-    **Output Format:**</br>
-    The output will have T number of lines.</br>
-    For each test case T, there will be three output lines.</br>
-    First line will give the sorted array.</br>
-    Second line will give total number of comparisons.</br>
-    Third line will give total number of shift operations required.</br>
-
-    **Sample I/O** (Problem - 1):</br>
-    | **Input:** | **Output:** |
-    | :---       | :---        |
-    | 3          |             |
-    | 8</br>-23 65 -31 76 46 89 45 32 | -31 -23 32 45 46 65 76 89</br>comparisons = 13</br>shifts = 20 |
-    | 10</br>54 65 34 76 78 97 46 32 51 21 | 21 32 34 46 51 54 65 76 78 97</br>comparisons = 28</br>shifts = 37 |
-    | 15</br>63 42 223 645 652 31 324 22 553 -12 54 65 86 46 325 | -12 22 31 42 46 54 63 65 86 223 324 325 553 645 652</br>comparisons = 54</br>shifts = 68 |
-
-2. Given an unsorted array of integers, design an algorithm and implement a program to sort this array using selection sort. Your program should also find number of comparisions and number of swaps required.
-
-    **Input Format:**</br>
-    The first line contains number of test cases, T.</br>
-    For each test case, there will be two input lines.</br>
-    First line contains n (the size of array).</br>
-    Second line contains space-separated integers describing array.</br>
-
-    **Output Format:**</br>
-    The output will have T number of lines.</br>
-    For each test case T, there will be three output lines.</br>
-    First line will give the sorted array.</br>
-    Second line will give total number of comparisons.</br>
-    Third line will give total number of swaps required.</br>
-
-    **Sample I/O** (Problem - 1):</br>
-    | **Input:** | **Output:** |
-    | :---       | :---        |
-    | 3          |             |
-    | 8</br>-23 65 -31 76 46 89 45 32 | -31 -23 32 45 46 65 76 89</br>comparisons = 28</br>swaps = 7 |
-    | 10</br>54 65 34 76 78 97 46 32 51 21 | 21 32 34 46 51 54 65 76 78 97</br>comparisons = 45</br>swaps = 9 |
-    | 15</br>63 42 223 645 652 31 324 22 553 -12 54 65 86 46 325 | -12 22 31 42 46 54 63 65 86 223 324 325 553 645 652</br>comparisons = 105</br>swaps = 14 |
-
-3. Given an unsorted array of positive integers, design an algorithm and implement it using a program to find whether there are any duplicate elements in the array or not. (use sorting) (Time Complexity = O(n log(n)))
-
-    **Input Format:**</br>
-    The first line contains number of test cases, T.</br>
-    For each test case, there will be two input lines.</br>
-    First line contains n (the size of array).</br>
-    Second line contains space-separated integers describing array.</br>
-
-    **Output Format:**</br>
-    The output will have T number of lines.</br>
-    For each test case T, output will be 'YES' if duplicates are present otherwise 'NO'.
-
-    **Sample I/O** (Problem - 3):</br>
-    | **Input:** | **Output:** |
-    | :---       | :---        |
-    | 3          |             |
-    | 5</br>28 52 83 14 75 | NO |
-    | 10</br>75 65 1 65 2 6 86 2 75 8 | YES |
-    | 15</br>75 35 86 57 98 23 73 1 64 8 11 90 61 19 20 | NO |
+1. [Insertion Sort](/PCS-409/Week_3/README#insertion-sort)
+2. [Selection Sort](/PCS-409/Week_3/README#selection-sort)
+3. [Sort and Find Duplicate](/PCS-409/Week_3/README#sort-and-find-duplicate)
 
 ---
+
+#### March, 30
+
+1. [Merge Sort](/PCS-409/Week_4/README#merge-sort)
+2. [Quick Sort](/PCS-409/Week_4/README#quick-sort)
+3. [Kth Smallest or Largest](/PCS-409/Week_4/README#kth-smallest-or-largest)
+
+---
+
+
+#### April, 06
+
+1. [Count Sort](/PCS-409/Week_5/README#count-sort)
+2. [Two Sum](/PCS-409/Week_5/README#two-sum)
+3. [Common Elements](/PCS-409/Week_5/README#common-elements)
+
+---
+
 

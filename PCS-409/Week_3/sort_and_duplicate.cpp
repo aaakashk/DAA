@@ -64,8 +64,7 @@ int main() {
         }
 
         merge_sort(array, 0, no_of_elements - 1);
-        bool duplicate_present = has_duplicate(array, no_of_elements);
-        duplicate_present ? std::cout << "YES\n" : std::cout << "NO\n";
+        has_duplicate(array, no_of_elements) ? std::cout << "YES\n" : std::cout << "NO\n";
     }
     return 0;
 }
