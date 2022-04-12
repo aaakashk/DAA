@@ -16,25 +16,25 @@
 
 #### March, 2
 
-1. [Linear Search](/PCS-409/Week_1/README#linear-search)
-2. [Binary Search](/PCS-409/Week_1/README#binary-search)
-3. [Jump Search](/PCS-409/Week_1/README#jump-search)
+1. [Linear Search](/PCS-409/Week_1/README.md#linear-search)
+2. [Binary Search](/PCS-409/Week_1/README.md#binary-search)
+3. [Jump Search](/PCS-409/Week_1/README.md#jump-search)
 
 ---
 
 #### March, 9
 
-1. [Duplicate](/PCS-409/Week_2/README#duplicate)
-2. [Sum](/PCS-409/Week_2/README#sum)
-3. [Difference](/PCS-409/Week_2/README#difference)
+1. [Duplicate](/PCS-409/Week_2/README.md#duplicate)
+2. [Sum](/PCS-409/Week_2/README.md#sum)
+3. [Difference](/PCS-409/Week_2/README.md#difference)
 
 ---
 
 #### March, 23
 
-1. [Insertion Sort](/PCS-409/Week_3/README#insertion-sort)
-2. [Selection Sort](/PCS-409/Week_3/README#selection-sort)
-3. [Sort and Find Duplicate](/PCS-409/Week_3/README#sort-and-find-duplicate)
+1. [Insertion Sort](/PCS-409/Week_3/README.md#insertion-sort)
+2. [Selection Sort](/PCS-409/Week_3/README.md#selection-sort)
+3. [Sort and Find Duplicate](/PCS-409/Week_3/README.md#sort-and-find-duplicate)
 
 ---
 
