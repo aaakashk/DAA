@@ -1,8 +1,8 @@
 ### April, 06
 
-#### Count Sort
+#### Maximum Duplicate Elements
 
-1. Given an unsorted array of alphabets containing duplicate elements. Design an algorithm and implement it using a program to find which alphabet has maximum number of occurrences and print it. (Time Complexity = O(n))
+1. Given an unsorted array of alphabets containing duplicate elements. Design an algorithm and implement it using a program to find which alphabet has maximum number of occurrences and print it. (Time Complexity = O(n)) (Hint: Use Count Sort)
 
     **Input Format:**</br>
     The first line contains number of test cases, T.</br>
@@ -36,13 +36,13 @@
 
     **Output Format:**</br>
     The output will have T number of lines.</br>
-    For each test caase, output will be the elements arr[i] and arr[j] such that arr[i] + arr[j] = key if exist otherwise print "No Such Elements Exist".</br>
+    For each test caase, output will be the elements arr[i] and arr[j] such that arr[i] + arr[j] = key if exist otherwise print "**No Such Elements Exist**".</br>
 
     **Sample I/O** (Problem - 2):
     | **Input:** | **Output:** |
     | :---       | :---        |
     | 2          |             |
-    | 10</br>64 28 97 40 12 72 84 24 38 10</br>50 | 10 40 |
+    | 10</br>64 28 97 40 12 72 84 24 38 10</br>50 | 10 40, 12 38|
     |15</br>56 10 72 91 29 3 41 45 61 20 11 39 9 12 94</br>302 | No Such Elements Exist |
 
 #### Common Elements

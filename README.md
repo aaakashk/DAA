@@ -49,7 +49,7 @@
 
 #### April, 06
 
-1. [Count Sort](/PCS-409/Week_5/README.md#count-sort)
+1. [Maximum Duplicate Elements](/PCS-409/Week_5/README.md#maximum-duplicate-elements)
 2. [Two Sum](/PCS-409/Week_5/README.md#two-sum)
 3. [Common Elements](/PCS-409/Week_5/README.md#common-elements)
 
