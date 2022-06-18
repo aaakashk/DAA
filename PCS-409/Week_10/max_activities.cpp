@@ -1,44 +1,37 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <iostream>
+#include <vector>
 
-static bool sortbysec(const pair<int, int> &a, const pair<int, int> &b) {
-    return (a.second < b.second);
-}
-// Function to find the maximum number of meetings that can
-// be performed in a meeting room.
-int maxMeetings(int start[], int end[], int n) {
-    vector<pair<int, int> > vec(n);
-    for (int i = 0; i < n; i++) {
-        vec[i] = make_pair(start[i], end[i]);
-    }
+struct activity {
+    int start, finish;
+};
 
-    sort(vec.begin(), vec.end(), sortbysec);
-
-    int ans = 1;
-    int last_end = vec[0].second;
-    cout << "(" << vec[0].first << "," << vec[0].second << ")" << endl;
-    for (int i = 1; i < n; i++) {
-        if (vec[i].first >= last_end) {
-            ans++;
-            last_end = vec[i].second;
-            cout << "(" << vec[i].first << "," << vec[i].second << ")" << endl;
-        }
-    }
-    return ans;
+bool compare_activity(struct activity a1, struct activity a2) {
+    return a1.finish < a2.finish;
 }
 
 int main() {
     int n;
-    cout << "Enter the n:";
-    cin >> n;
-    cout << "Enter the n start time:" << endl;
-    int start[n];
-    for (int i = 0; i < n; i++)
-        cin >> start[i];
-    cout << "Enter the n end time:" << endl;
-    int end[n];
-    for (int i = 0; i < n; i++)
-        cin >> end[i];
-
-    cout << maxMeetings(start, end, n) << endl;
+    std::cin >> n;
+    struct activity activity[n];
+    for (int i = 0; i < n; i++) std::cin >> activity[i].start;
+    for (int i = 0; i < n; i++) std::cin >> activity[i].finish;
+    std::sort(activity, activity + n, compare_activity);
+    int j = 0, count = 1;
+    std::vector<int> vector;
+    // std::cout << activity[j].start << " " << activity[j].finish << "\n";
+    for (int i = 1; i < n; i++) {
+        if (activity[i].start >= activity[j].finish) {
+            count++;
+            // std::cout << activity[i].start << " " << activity[i].finish << "\n";
+            vector.push_back(i + 1);
+            j = i;
+        }
+    }
+    std::cout << "Total number of activities selected: " << count << "\n";
+    std::cout << "Activities selected are: 1, ";
+    for (int i = 0; i < vector.size(); i++) {
+        std::cout << vector[i];
+        i == vector.size() - 1 ? std::cout << "." : std::cout << ", ";
+    }
+    return 0;
 }

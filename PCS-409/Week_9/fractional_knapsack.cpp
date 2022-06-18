@@ -1,50 +1,49 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <iostream>
+#include <vector>
 
-static bool comp(pair<int, int> &i1, pair<int, int> &i2) {
-    return (double)i1.first / i1.second > (double)i2.first / i2.second;
+struct item {
+    int weight, value, id;  // id is used to store item's number, mainly for printing purposes
+};
+
+bool compare_items(struct item i1, struct item i2) {
+    double a = (double)i1.value / (double)i1.weight;
+    double b = (double)i2.value / (double)i2.weight;
+    return a > b;
 }
 
-double fractionalKnapsack(int w, vector<pair<int, int>> item, int n, vector<pair<int, double>> &selected) {
-    sort(item.begin(), item.end(), comp);
-    double ans = 0;
-
-    for (int i = 0; i < n; i++) {
-        if (item[i].second <= w) {
-            ans += item[i].first;
-            w -= item[i].second;
-            selected.push_back({item[i].first, 1});
+double fractional_knapsack(struct item arr[], int weight, int n, std::vector<std::pair<int, int> >& vector) {
+    int i = 0;
+    double result = 0.0;
+    while (weight) {
+        if (arr[i].weight <= weight) {
+            weight -= arr[i].weight;
+            result += arr[i].value;
+            vector.push_back(std::make_pair(arr[i].id, arr[i].weight));  // to print item's id and weight
+            i++;
         } else {
-            ans += item[i].first * ((double)w / item[i].second);
-            selected.push_back({item[i].first, (double)w / item[i].second});
+            result += arr[i].value * ((double)weight / (double)arr[i].weight);
+            vector.push_back(std::make_pair(arr[i].id, weight));  // again, to print item's id and weight
             break;
         }
     }
-    return ans;
+    return result;
 }
+
 int main() {
     int n;
-    cout << "Enter the n:" << endl;
-    cin >> n;
-    vector<int> value(n, 0);
-    vector<int> weight(n, 0);
-    cout << "enter n values:" << endl;
-    for (int i = 0; i < n; i++)
-        cin >> value[i];
-    cout << "enter n weight:" << endl;
-    for (int i = 0; i < n; i++)
-        cin >> weight[i];
-    cout << "Enter Maximum weight of Knapsack" << endl;
-    int w;
-    cin >> w;
-
-    vector<pair<int, int>> item(n, {0, 0});
-    for (int i = 0; i < n; i++)
-        item[i] = {value[i], weight[i]};
-
-    vector<pair<int, double>> selected;
-    cout << "Maximum Value:" << fractionalKnapsack(w, item, n, selected) << endl;
-    cout << "Item Weight:" << endl;
-    for (int i = 0; i < selected.size(); i++)
-        cout << selected[i].first << "-" << selected[i].second << endl;
+    std::cin >> n;
+    struct item arr[n];
+    for (int i = 0; i < n; i++) std::cin >> arr[i].weight;
+    for (int i = 0; i < n; i++) std::cin >> arr[i].value;
+    for (int i = 0; i < n; i++) arr[i].id = i + 1;
+    int weight;
+    std::cin >> weight;
+    std::sort(arr, arr + n, compare_items);
+    std::vector<std::pair<int, int> > vector;
+    std::cout << "Maximum Weight: " << fractional_knapsack(arr, weight, n, vector);
+    std::cout << "\nItem : Weight\n";
+    for (std::pair<int, int> p : vector) {
+        std::cout << p.first << "    : " << p.second << "\n";
+    }
+    return 0;
 }
