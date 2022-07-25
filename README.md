@@ -14,7 +14,7 @@
 
 ---
 
-#### March, 2
+#### [March, 2](/PCS-409/Week_1/)
 
 1. [Linear Search](/PCS-409/Week_1)
 2. [Binary Search](/PCS-409/Week_1/README.md)
