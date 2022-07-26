@@ -97,14 +97,14 @@
 
 1. [Activity Selection](/PCS-409/Week_10/max_activities.cpp)
 2. [Job Scheduling](/PCS-409/Week_10/max_tasks.cpp)
-3. [Majority Element](/PCS-409/Week_10/majority_element.cpp)
+3. [Majority Element](/PCS-409/Week_10/majority_element.cpp) - an element that has a frequency of n/2, where n is the size of array
 4. [README](/PCS-409/Week_10/README.md)
 ---
 
 #### Week - 11 [June, 08]
 
 1. [Matrix Chain Multiplication](/PCS-409/Week_11/matrix_mul.cpp)
-2. [Coins](/PCS-409/Week_11/coins.cpp)
-3. [Subset Sum](/PCS-409/Week_11/subset.cpp)
+2. [Coins](/PCS-409/Week_11/coins.cpp) - find total number of ways such that sum of coins is equal to given target value
+3. [Subset Sum](/PCS-409/Week_11/subset.cpp) - sum of elements in both subsets is same
 4. [README](/PCS-409/Week_11/README.md)
 ---
