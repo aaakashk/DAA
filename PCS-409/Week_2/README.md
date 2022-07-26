@@ -1,6 +1,6 @@
-### March, 9
+### [March, 09](/PCS-409/Week_2/)
 
-#### Duplicate
+#### [Duplicate](/PCS-409/Week_2/search_dup_count.cpp)
 
 1. Given a sorted array of positive integers containing few duplicate elements, design an algorithm and implement it using a program to find whether the given key element is present in the array or not. If present, then also find the number of copies of given key. (Time Complexity = O(log n))</br>
 
@@ -22,7 +22,7 @@
     | 10</br>235 235 278 278 763 764 790 853 981 981</br>981 | 981 2 |
     | 15</br>1 2 2 3 3 5 5 5 25 75 75 75 97 97 97</br>75 | 75 3 |
 
-#### Sum
+#### [Sum](/PCS-409/Week_2/two_sum.cpp)
 
 2. Given a sorted array of positive integers, design an algorithm and implement it using a program to find three indices i, j, k such that arr[i] + arr[j] = arr[k].</br>
 
@@ -44,7 +44,7 @@
     | 10</br>24 28 48 71 86 89 92 120 194 201 | 2, 7, 8 |
     | 15</br>64 69 82 95 99 107 113 141 171 350 369 400 511 590 666 | 1, 6, 9|
 
-#### Difference
+#### [Difference](/PCS-409/Week_2/two_diff.cpp)
 
 3. Given an array of non-negative integers, design an algorithm and a program to count the number of pairs of integers such that their difference is equal to a given key, K.</br>
 

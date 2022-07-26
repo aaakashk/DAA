@@ -1,6 +1,6 @@
-### March, 2
+### [March, 02](/PCS-409/Week_1/)
 
-#### Linear Search
+#### [Linear Search](/PCS-409/Week_1/linear_search.cpp)
 
 1. Given an array of non-negative integers, design a linear algorithm and implement it using a program to find whether given key element is present in the array or not. Also, find total number of comparisons for each input case. (Time Complexity = O(n), where n is the size of input).
 
@@ -12,11 +12,11 @@
     | 5</br>977 354 244 546 355</br>244 | Present 3 |
     | 6</br>23 64 13 67 43 56</br>63 | Not Present 6 |
 
-#### Binary Search
+#### [Binary Search](/PCS-409/Week_1/binary_search.cpp)
 
 2. Given an already sorted array of positve integers, design an algorithm and implement it using a program to find whether given key element is present in the array or not. Also, find the total number of comparisons for each input case. (Time Complexity = O(log(n)), where n is the size of input).
 
-#### Jump Search
+#### [Jump Search](/PCS-409/Week_1/jump_search.cpp)
 
 3. Given an already sorted array of positive integers, design an algorithm and implement it using a program to find whether a given key element is present in the sorted array or not. For an array arr[n], search at the indexes arr[0], arr[2], arr[4],... ..., arr[2<sup>k</sup>] and so on. Once the interval (arr[2<sup>k</sup>] < key < arr[2<sup>k+1</sup>]) is found, perform a linear search operation from the index 2<sup>k</sup> to find the element key. (Time Complexity < O(n), where n is the number of elements need to be scanned for searching).
 

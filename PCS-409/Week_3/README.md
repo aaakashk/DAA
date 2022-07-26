@@ -1,6 +1,6 @@
-### March, 23
+### [March, 23](/PCS-409/Week_3/)
 
-#### Insertion Sort
+#### [Insertion Sort](/PCS-409/Week_3/insertion_sort.cpp)
 
 1. Given an unsorted array of integers, design an algorithm and a program to sort the array using insertion sort. Your program should be able to find number of comparisons and shifts (shifts - total number of times the array elements are shifted from their place), required for sorting the array.</br>
 
@@ -25,7 +25,7 @@
     | 10</br>54 65 34 76 78 97 46 32 51 21 | 21 32 34 46 51 54 65 76 78 97</br>comparisons = 37</br>shifts = 28 |
     | 15</br>63 42 223 645 652 31 324 22 553 -12 54 65 86 46 325 | -12 22 31 42 46 54 63 65 86 223 324 325 553 645 652</br>comparisons = 68</br>shifts = 54 |
 
-#### Selection Sort
+#### [Selection Sort](/PCS-409/Week_3/selection_sort.cpp)
 
 2. Given an unsorted array of integers, design an algorithm and implement a program to sort this array using selection sort. Your program should also find number of comparisions and number of swaps required.
 
@@ -50,7 +50,7 @@
     | 10</br>54 65 34 76 78 97 46 32 51 21 | 21 32 34 46 51 54 65 76 78 97</br>comparisons = 45</br>swaps = 9 |
     | 15</br>63 42 223 645 652 31 324 22 553 -12 54 65 86 46 325 | -12 22 31 42 46 54 63 65 86 223 324 325 553 645 652</br>comparisons = 105</br>swaps = 14 |
 
-#### Sort and Find Duplicate
+#### [Sort and Find Duplicate](/PCS-409/Week_3/sort_and_duplicate.cpp)
 
 3. Given an unsorted array of positive integers, design an algorithm and implement it using a program to find whether there are any duplicate elements in the array or not. (use sorting) (Time Complexity = O(n log(n)))
 

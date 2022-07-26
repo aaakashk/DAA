@@ -1,6 +1,6 @@
-### April, 06
+### [April, 06](/PCS-409/Week_5/)
 
-#### Maximum Duplicate Elements
+#### [Maximum Duplicate Elements](/PCS-409/Week_5/max_dup_elements.cpp)
 
 1. Given an unsorted array of alphabets containing duplicate elements. Design an algorithm and implement it using a program to find which alphabet has maximum number of occurrences and print it. (Time Complexity = O(n)) (Hint: Use Count Sort)
 
@@ -23,7 +23,7 @@
     | 15</br>r k p g v y u m q a d j c z e | No Duplicates Present |
     | 20</br>g t l l t c w a w g l c w d s a a v c l | l - 4 |
 
-#### Two Sum
+#### [Two Sum](/PCS-409/Week_5/two_sum.cpp)
 
 2. Given an unsorted array of integers, design an algorithm and implement it using a program to find whether two elements exist such that their sum is equal to the given key element. (Time Complexity = O(n log (n))
 
@@ -45,7 +45,7 @@
     | 10</br>64 28 97 40 12 72 84 24 38 10</br>50 | 10 40, 12 38|
     |15</br>56 10 72 91 29 3 41 45 61 20 11 39 9 12 94</br>302 | No Such Elements Exist |
 
-#### Common Elements
+#### [Common Elements](/PCS-409/Week_5/common_elements.cpp)
 
 3. You have been given two sorted integer arrays of size m and n. Design an algorithm and implement it using a program to find list of elements which are common to both. (Time Complexity = O(m + n))
 

@@ -1,6 +1,6 @@
-### May, 04
+### [May, 04](/PCS-409/Week_6/)
 
-#### Depth First Search
+#### [Depth First Search](/PCS-409/Week_6/dfs.cpp)
 
 1. Given a (directed/undirected) graph, design an algorithm and implement it using a program to find if a path exists between two given vertices or not. (Hint: use DFS)
 
@@ -17,7 +17,7 @@
     | 5          | Yes Path Exists |
     | 0 1 1 0 0<br>1 0 1 1 1<br>1 1 0 1 0<br>0 1 1 0 1<br>0 1 0 1 0<br>1 5 |        |
 
-#### Bipartite Graph
+#### [Bipartite Graph](/PCS-409/Week_6/bipartite_graph.cpp)
 
 2. Given a graph, design an algorithm and implement it using a program to find if a graph is bipartite or not. (Hint: use BFS)
 
@@ -33,7 +33,7 @@
     | 5          | Not Bipartite |
     | 0 1 1 0 0<br>1 0 1 1 1<br>1 1 0 1 0<br>0 1 1 0 1<br>0 1 0 1 0 |             |
 
-#### Cyclic Graph
+#### [Cyclic Graph](/PCS-409/Week_6/has_cycle.cpp)
 
 3. Given a directed graph, design an algorithm and implement it using a program to find whether cycle exists in the graph or not.
 
